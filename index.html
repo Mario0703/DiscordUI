@@ -1,40 +1,79 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <link rel="icon" type="image/svg+xml" href="/webstorm-icon-logo.svg" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>WS playground</title>
-  <link rel="stylesheet" href="/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Discord UI Clone</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<header class="logo">
-  <a href="https://www.jetbrains.com/webstorm/">
-    <img src="/webstorm-logo.svg" alt="WebStorm logo" width="344"
-         height="90">
-  </a>
-</header>
-<main id="app">
-  <h1 class="title">
-    Thank you for trying it out. <br /> Your first project is up and running
-    now.
-  </h1>
-  <section class="counter">
-    <div class="counter-info">
-      <p class="counter-text">Counter is</p>
-      <p class="counter-value" id="counter-value"></p>
+<div class="servers">
+  <div class="ServerTitle">
+    <b>Discord</b>
+  </div>
+  <ul>
+    <li class="server">Server1</li>
+    <li class="server">Server2</li>
+    <li class="server">Server3</li>
+    <li class="server">Server4</li>
+    <li class="server">Server5</li>
+    <li class="server">Server6</li>
+    <li class="server">Server7</li>
+    <li class="server">Server8</li>
+    <li class="server">Server9</li>
+    <li class="server">Server10</li>
+    <li class="server">Server11</li>
+    <li class="server">Server12</li>
+    <li class="server">Server13</li>
+    <li class="server">Server14</li>
+    <li class="server">Server15</li>
+  </ul>
+</div>
+<div class="sidebar">
+  <input type="text" class="search-bar" placeholder="Find or start a conversation">
+  <div>
+    <h4>Friends</h4>
+    <h4>Nitro</h4>
+    <h4>Shop</h4>
+  </div>
+  <div class="friends-list">
+    <h3>DIRECT MESSAGES</h3>
+    <!-- Friends list -->
+    <div class="friend">Friend 1</div>
+    <div class="friend">Friend 2</div>
+    <div class="friend">Friend 3</div>
+    <div class="friend">Friend 4</div>
+  </div>
+</div>
+<div class="main-content">
+  <div class="top-bar">
+    <div class="tabs">
+      <button class="tab active">Friends</button>
+      <button class="tab">Online</button>
+      <button class="tab">All</button>
+      <button class="tab">Pending</button>
+      <button class="tab">Blocked</button>
+      <button class="tab">Add Friend</button>
     </div>
-    <div class="counter-interaction">
-      <button id="increaseByOne" type="button">+1</button>
-      <button id="increaseByTwo" type="button">+2</button>
-      <button id="decreaseByOne" type="button">-1</button>
-      <button id="decreaseByTwo" type="button">-2</button>
+    <input type="text" class="search-bar-main" placeholder="Search">
+  </div>
+  <div class="content">
+    <div class="friends-status">
+      <div>
+        <div class="status-item">Friend 1 - Online</div>
+        <div class="status-indicator"></div>
+      </div>
+      <div class="status-item">Friend 2 - Idle</div>
+      <div class="status-item">Friend 3 - Offline</div>
+      <!-- Add more status items as needed -->
     </div>
-  </section>
-</main>
-<footer class="technologies">
-  <img src="/technologies.svg" alt="List of supported technologies">
-</footer>
-<script type="module" src="/src/main.js"></script>
+    <div class="active-now">
+      <h4>Active Now</h4>
+      <div class="active-item">Mario - Playing Halo 3</div>
+      <div class="active-item">Klatkage - Playing Helldivers 2</div>
+      <div class="active-item">TheKingOfCows - Playing Wallpaper engine</div>
+    </div>
+  </div>
+</div>
 </body>
 </html>
